@@ -25,8 +25,8 @@ const bodoniModa = Bodoni_Moda({
 });
 
 export const metadata: Metadata = {
-  title: "Ryusei Home",
-  description: "Landing Page for Ryusei Site",
+  title: "Ryusei",
+  description: "Landing Page for Ryusei Homelab",
 };
 
 export default function RootLayout({

@@ -2,26 +2,64 @@ import { FaGithub, FaServer } from "react-icons/fa";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen items-center bg-stone-300">
-      <div className="flex min-w-screen bg-stone-500 flex-col py-16 pl-32">
-        <div className="text-stone-900">
-          <h1 className="font-bodoni-moda text-7xl font-bold" >Ryusei Homepage</h1>
-          <p className="font-neuton text-2xl"> Sclatch's personal website landing page</p>
-        </div>
-        <div className="mt-4 flex flex-row gap-3">
-          <button className="rounded-3xl bg-stone-900 px-6 py-3 text-stone-300 hover:bg-stone-700">
-            <div className="flex flex-row items-center gap-2">
-              <FaServer className="w-4.5 h-4.5" />
-              <p>Services</p>
-            </div>
+    <main className="relative flex min-h-screen items-center bg-stone-200 overflow-hidden">
+      
+      {/* Background diagonal lines */}
+      <div
+        className="absolute bottom-0 right-0 w-2/3 aspect-square"
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+            -45deg,
+            #a8a29e 0px,
+            #a8a29e 2px,
+            transparent 2px,
+            transparent 28px
+          )`,
+          clipPath: "polygon(100% 0, 100% 100%, 0 100%)",
+          WebkitMaskImage: "linear-gradient(135deg, transparent 40%, black 80%)",
+          maskImage: "linear-gradient(135deg, transparent 40%, black 80%)",
+          opacity: 0.5,
+        }}
+      />
+      
+      <div className="flex flex-col sm:pl-32 pl-12">
+  
+        {/* Eyebrow label */}
+        <span className="mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-stone-400">
+          @sclatch
+        </span>
+
+        {/* Heading */}
+        <h1 className="font-bodoni-moda text-8xl font-bold text-stone-900">
+          Ryusei
+        </h1>
+
+        {/* Divider accent */}
+        <div className="mt-5 mb-6 h-px w-12 bg-stone-400" />
+
+        {/* Subtitle */}
+        <p className="font-neuton text-xl text-stone-500">
+          Self-hosted. Self-made. <b>Homelab</b>.<br />
+          Projects, services, and the occasional tinkering.
+        </p>
+
+        {/* Buttons */}
+        <div className="mt-10 flex flex-row items-center gap-4">
+          <button 
+          className="flex items-center gap-2 rounded-full bg-stone-900 px-7 py-3 text-stone-100 transition hover:bg-stone-700">
+            <FaServer size={13} />
+            Services
           </button>
-          <a 
-          href="https://github.com/sclatch"
-          className="rounded-3xl bg-stone-900 px-6 py-3 text-stone-300 hover:bg-stone-700">
-            <div className="flex flex-row items-center gap-2">
-              <FaGithub className="w-4.5 h-4.5" />
-              <p>Github</p>
-            </div>
+          
+          <a
+            href="https://github.com/sclatch"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-stone-500 transition hover:text-stone-900"
+          >
+            <FaGithub size={16} />
+            GitHub
+            <span>↗</span>
           </a>
         </div>
       </div>
