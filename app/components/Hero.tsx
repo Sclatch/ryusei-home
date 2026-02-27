@@ -40,7 +40,7 @@ export default function Hero() {
         <div className="mt-5 mb-6 h-px w-12 bg-stone-400" />
 
         {/* Subtitle */}
-        <p className="font-neuton text-xl text-stone-500">
+        <p className="font-neuton sm:text-xl text-m text-stone-500">
           Self-hosted. Self-made. <b>Personal Homelab</b>.<br />
           Projects, services, and the occasional tinkering.
         </p>
