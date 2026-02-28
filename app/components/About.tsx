@@ -1,4 +1,5 @@
 "use client";
+import Image from "next/image";
 import { useState } from "react";
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
@@ -34,24 +35,61 @@ export default function About() {
       ),
     },
     {
-      label: "Hardware Specifications",
+      label: "Hardware",
       content: (
-        <div className="flex flex-col justify-center sm:flex-row gap-12 w-full">
-          <div className="flex flex-col sm:w-3/4">
-            <p className="font-neuton text-center text-lg text-stone-600 leading-relaxed">
-              Intel 12th N100, 16GB RAM, 512GB NVMe SSD, 1TB SATA SSD. Tucked away in a compact mini PC case under my bed. Runs 24/7 at a quiet 15W TDP, powering my homelab and this website with minimal noise and maximum efficiency.
+        <div className="flex flex-col sm:flex-row items-center gap-12 w-full">
+
+          {/* Image side */}
+          <div className="flex flex-col items-center gap-4 sm:w-1/3">
+            <Image
+              src="/images/minipc.png"
+              alt="Mini PC Graphic"
+              style={{ filter: "invert(28%) sepia(8%) saturate(400%) hue-rotate(10deg) brightness(85%)" }}
+              height={0}
+              width={0}
+              sizes="100vw"
+              className="h-48 w-auto drop-shadow-md"
+            />
+            <span className="text-xs uppercase tracking-widest text-stone-400">Nezumi — ネズミ</span>
+          </div>
+
+          {/* Text side */}
+          <div className="flex flex-col sm:w-2/3 gap-4">
+            <h3 className="font-bodoni-moda text-3xl font-bold text-stone-900">
+              Mouse Powerhouse
+            </h3>
+            <div className="h-px w-12 bg-stone-400" />
+
+            {/* Specs grid */}
+            <div className="grid grid-cols-2 gap-3">
+              {[
+                { label: "CPU", value: "Intel N100 12th Gen" },
+                { label: "RAM", value: "24GB (zram enabled)" },
+                { label: "Storage", value: "512GB NVMe + 1TB SATA" },
+                { label: "TDP", value: "6W (Idle) / 30W (Max)" },
+              ].map((spec) => (
+                <div key={spec.label} className="rounded-xl bg-stone-200 bg-opacity-60 border border-stone-300 px-4 py-3">
+                  <span className="text-xs uppercase tracking-widest text-stone-400">{spec.label}</span>
+                  <p className="mt-1 font-neuton text-base text-stone-700">{spec.value}</p>
+                </div>
+              ))}
+            </div>
+
+            <p className="font-neuton text-lg text-stone-600 leading-relaxed">
+              Discreetly tucked beneath my bed, running 24/7 and powering my homelab and this website with minimal noise and maximum efficiency.
             </p>
           </div>
+
         </div>
       ),
     },
     {
-      label: "Goal and Purpose",
+      label: "Goal & Purpose",
       content: (
         <div className="flex flex-col justify-end sm:flex-row gap-12 w-full">
           <div className="flex flex-col sm:w-1/2">
             <p className="font-neuton text-right text-lg text-stone-600 leading-relaxed">
-              Learn and help my friends to provide them with a reliable, high-performance homelab that can run various services and projects. It's a personal playground for experimentation, learning, and sharing knowledge about self-hosting and server management.
+              I built this homelab to learn, experiment, grow, and to help my friends along the way. It's a reliable, power efficient playground where I run real services, test new ideas, and share what I learn about self-hosting and server management.
             </p>
           </div>
         </div>
