@@ -12,6 +12,7 @@ While Code Agent LLM is used in this project, It is mostly about back-and-forth 
 ## Getting Started
 
 If you want to run this website on your own local machine or edit the content, go to the root repo directory and type:
+
 *(Be warned that I personally use pnpm in this project because I have never used it in the past and wanted to learn)*
 ```bash
 npm install
