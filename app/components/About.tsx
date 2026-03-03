@@ -39,7 +39,7 @@ export default function About() {
       content: (
         <div className="flex flex-col sm:flex-row items-center gap-12 w-full">
 
-          {/* Image side */}
+          {/* Image */}
           <div className="flex flex-col items-center gap-4 sm:w-1/3">
             <Image
               src="/images/minipc.png"
@@ -53,9 +53,9 @@ export default function About() {
             <span className="text-xs uppercase tracking-widest text-stone-400">Nezumi — ネズミ</span>
           </div>
 
-          {/* Text side */}
+          {/* Text */}
           <div className="flex flex-col sm:w-2/3 gap-4">
-            <h3 className="font-bodoni-moda text-3xl font-bold text-stone-900">
+            <h3 className="font-neuton text-3xl text-stone-900">
               Mouse Powerhouse
             </h3>
             <div className="h-px w-12 bg-stone-400" />
@@ -108,10 +108,11 @@ export default function About() {
             linear-gradient(to right, #a8a29e 1.5px, transparent 1.5px),
             linear-gradient(to bottom, #a8a29e 1.5px, transparent 1.5px)
           `,
-          backgroundSize: "50px 50px",
+          backgroundSize: "40px 40px",
           WebkitMaskImage: "linear-gradient(to bottom, black 0%, transparent 30%, transparent 70%, black 100%)",
           maskImage: "linear-gradient(to bottom, black 0%, transparent 30%, transparent 70%, black 100%)",
           opacity: 0.3,
+          animation: "scrollPatternDown 2s linear infinite",
         }}
       />
 

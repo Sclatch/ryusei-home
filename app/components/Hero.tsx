@@ -20,6 +20,7 @@ export default function Hero() {
           clipPath: "polygon(100% 0, 100% 100%, 0 100%)",
           WebkitMaskImage: "linear-gradient(135deg, transparent 40%, black 80%)",
           maskImage: "linear-gradient(135deg, transparent 40%, black 80%)",
+          animation: "scrollPatternDiagonal 2s linear infinite",
           opacity: 0.5,
         }}
       />
@@ -55,7 +56,7 @@ export default function Hero() {
             document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
           }}
           >
-            <FaServer size={13} />
+            <FaServer className="text-lg" />
             Services
           </a>
           
