@@ -9,6 +9,7 @@ import Image from "next/image"
 const stoneFilter = "brightness(0) saturate(100%) invert(9%) sepia(7%) saturate(548%) hue-rotate(314deg) brightness(94%)"
 
 interface Service {
+  index?: number
   id: string
   icon: string
   logo: string
@@ -50,7 +51,7 @@ const services: Service[] = [
   },
 ]
 
-function ServiceCard({ icon, logo, logoAlt, href, buttonLabel, ButtonIcon, description }: Omit<Service, "id">) {
+function ServiceCard({ index = 0, icon, logo, logoAlt, href, buttonLabel, ButtonIcon, description }: Omit<Service, "id">) {
   const ref = useRef<HTMLDivElement>(null)
   const [visible, setVisible] = useState<boolean>(false)
 
@@ -68,6 +69,7 @@ function ServiceCard({ icon, logo, logoAlt, href, buttonLabel, ButtonIcon, descr
       ref={ref}
       className={`relative overflow-hidden flex flex-col sm:gap-6 gap-4 rounded-2xl bg-stone-200 bg-opacity-50 border border-stone-400 p-8 transition-all duration-[1s] ease-out
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-60"}`}
+      style={{ transitionDelay: `${index * 0.3}s` }}
     >
 
       {/* Background image */}
@@ -117,8 +119,8 @@ function ServiceCard({ icon, logo, logoAlt, href, buttonLabel, ButtonIcon, descr
 export default function ServiceCards(): React.JSX.Element {
   return (
     <>
-      {services.map(({ id, ...service }) => (
-        <ServiceCard key={id} {...service} />
+      {services.map(({ id, ...service }, index) => (
+        <ServiceCard key={id} index={index} {...service} />
       ))}
     </>
   )
