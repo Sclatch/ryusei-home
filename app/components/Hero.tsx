@@ -1,6 +1,6 @@
-"use client";
+"use client"
 
-import { FaGithub, FaServer } from "react-icons/fa";
+import { FaGithub, FaServer } from "react-icons/fa"
 
 export default function Hero() {
   return (
@@ -52,8 +52,8 @@ export default function Hero() {
           href="#services"
           className="flex items-center gap-2 rounded-full bg-stone-900 px-7 py-3 text-stone-100 transition hover:bg-stone-700"
           onClick={(e) => {
-            e.preventDefault();
-            document.getElementById("services")?.scrollIntoView({ behavior: "smooth" });
+            e.preventDefault()
+            document.getElementById("services")?.scrollIntoView({ behavior: "smooth" })
           }}
           >
             <FaServer className="text-lg" />
@@ -73,5 +73,5 @@ export default function Hero() {
         </div>
       </div>
     </section>
-  );
+  )
 }

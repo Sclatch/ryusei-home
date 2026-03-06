@@ -1,10 +1,10 @@
-"use client";
-import Image from "next/image";
-import { useState } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
+"use client"
+import Image from "next/image"
+import { useState } from "react"
+import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
 
 export default function About() {
-  const [current, setCurrent] = useState(0);
+  const [current, setCurrent] = useState(0)
 
   const slides = [
     {
@@ -95,7 +95,7 @@ export default function About() {
         </div>
       ),
     },
-  ];
+  ]
 
   return (
     <section className="relative overflow-hidden snap-start flex flex-col min-h-screen bg-stone-300">
@@ -177,5 +177,5 @@ export default function About() {
       </div>
 
     </section>
-  );
+  )
 }
