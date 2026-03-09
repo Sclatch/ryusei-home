@@ -45,7 +45,7 @@ const services: Service[] = [
     ButtonIcon: MdDownload,
     description: (
       <>
-        A custom <b>AutoHotkey</b> macro system designed to streamline my workflow in <b>Clip Studio Paint</b>. Essential tools are mapped to the numpad for instant access that supports multi-key combinations. Built through personal experience and continuous refinement, it cuts time spent navigating menus and transforms everyday shortcuts into a faster, smoother illustration experience.
+        A custom <b>AutoHotkey</b> macro system designed to streamline my workflow in <b>Clip Studio Paint</b>. Essential tools are mapped to the numpad for instant access that supports multi-key combinations. Built through personal experience and continuous refinement, it cuts time spent navigating menus and transforms everyday shortcuts into a faster experience.
       </>
     ),
   },
@@ -108,7 +108,7 @@ function ServiceCard({ index = 0, icon, logo, logoAlt, href, buttonLabel, Button
       <div className="h-px w-full bg-stone-300" />
 
       {/* Description */}
-      <p className="font-neuton text-base text-stone-500 leading-relaxed max-w-xl">
+      <p className="font-neuton sm:text-lg text-base text-stone-500 leading-relaxed max-w-xl">
         {description}
       </p>
 
@@ -116,7 +116,7 @@ function ServiceCard({ index = 0, icon, logo, logoAlt, href, buttonLabel, Button
   )
 }
 
-export default function ServiceCards(): React.JSX.Element {
+export default function ServiceCards() {
   return (
     <>
       {services.map(({ id, ...service }, index) => (
