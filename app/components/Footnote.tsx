@@ -8,7 +8,7 @@ export default function Footnote() {
       {/* Main quote */}
       <div className="flex flex-col gap-3">
         <div className="h-px w-12 bg-stone-700" />
-        <p className="font-bodoni-moda sm:text-4xl text-2xl font-bold text-stone-100 leading-snug max-w-lg">
+        <p className="font-gloock sm:text-4xl text-2xl font-bold text-stone-100 leading-snug max-w-lg">
           Be kind unto others,<br />and to yourself.
         </p>
       </div>

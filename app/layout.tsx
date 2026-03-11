@@ -1,16 +1,6 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Neuton, Bodoni_Moda } from "next/font/google";
+import { Geist, Geist_Mono, Neuton, Bodoni_Moda, Gloock } from "next/font/google";
 import "./globals.css";
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 const neuton = Neuton({
   variable: "--font-neuton",
@@ -18,10 +8,10 @@ const neuton = Neuton({
   weight: ["400", "700"]
 });
 
-const bodoniModa = Bodoni_Moda({
-  variable: "--font-bodoni-moda",
+const gloock = Gloock({
+  variable: "--font-gloock",
   subsets: ["latin"],
-  weight: ["400", "700"]
+  weight: "400"
 });
 
 export const metadata: Metadata = {
@@ -37,7 +27,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${neuton.variable} ${bodoniModa.variable} antialiased`}
+        className={`${neuton.variable} ${gloock.variable} antialiased`}
       >
         {children}
       </body>

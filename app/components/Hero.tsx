@@ -5,8 +5,8 @@ import { FaGithub, FaServer } from "react-icons/fa"
 export default function Hero() {
   return (
     <section className="snap-start relative flex min-h-screen items-center bg-stone-200 overflow-hidden">
-      
-      {/* Background diagonal lines */}
+
+      {/* Background diagonal lines*/}
       <div
         className="absolute bottom-0 right-0 w-2/3 aspect-square"
         style={{
@@ -33,7 +33,7 @@ export default function Hero() {
         </span>
 
         {/* Heading */}
-        <h1 className="font-bodoni-moda sm:text-8xl text-6xl font-bold text-stone-900">
+        <h1 className="font-gloock sm:text-8xl text-6xl text-stone-900">
           Ryusei
         </h1>
 
