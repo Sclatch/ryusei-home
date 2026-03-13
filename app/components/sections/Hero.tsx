@@ -1,12 +1,15 @@
 "use client"
 
 import { FaGithub, FaServer } from "react-icons/fa"
+import ScrollingTexts from "@/app/components/ui/ScrollingTexts"
 
 export default function Hero() {
   return (
     <section className="snap-start relative flex min-h-screen items-center bg-stone-200 overflow-hidden">
+      {/*
 
-      {/* Background diagonal lines*/}
+      Background diagonal lines
+      
       <div
         className="absolute bottom-0 right-0 w-2/3 aspect-square"
         style={{
@@ -24,8 +27,11 @@ export default function Hero() {
           opacity: 0.5,
         }}
       />
+      */}
+
+      <ScrollingTexts />
       
-      <div className="flex flex-col sm:pl-32 pl-12">
+      <div className="z-10 flex flex-col sm:pl-32 pl-12">
   
         {/* Eyebrow label */}
         <span className="mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-stone-400">

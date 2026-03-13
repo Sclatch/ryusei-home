@@ -3,6 +3,7 @@
 @theme inline {
   --font-neuton: var(--font-neuton);
   --font-gloock: var(--font-gloock);
+  --font-lubrifont: var(--font-wdxl-lubrifont);
 }
 
 @keyframes scrollPatternDown {
@@ -21,6 +22,16 @@
   to {
     background-position: 0 40px;
   }
+}
+
+@keyframes scrollLeft {
+  0% { transform: translateX(12.5%); }
+  100% { transform: translateX(-12.5%); }
+}
+
+@keyframes scrollRight {
+  0% { transform: translateX(-12.5%); }
+  100% { transform: translateX(12.5%); }
 }
 
 body {

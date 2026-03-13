@@ -124,7 +124,7 @@ export default function About() {
         <h2 className="font-gloock sm:text-6xl text-4xl text-stone-900 leading-none">
           Nezumi no Ryusei
         </h2>
-        <span className="mt-2 tracking-[1em] text-sm text-stone-400">
+        <span className="font-lubrifont mt-2 tracking-[2em] text-sm text-stone-400">
           ネズミのリュ星
         </span>
         <div className="mt-5 h-px w-12 bg-stone-400" />
