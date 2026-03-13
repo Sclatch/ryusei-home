@@ -1,7 +1,7 @@
-import Hero from "./components/Hero"
-import About from "./components/About"
-import Services from "./components/Services"
-import Footnote from "./components/Footnote"
+import Hero from "@/app/components/sections/Hero"
+import About from "@/app/components/sections/About"
+import Services from "@/app/components/sections/Services"
+import Footnote from "@/app/components/sections/Footnote"
 
 export default function Home() {
   return (

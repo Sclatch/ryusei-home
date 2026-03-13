@@ -1,4 +1,4 @@
-import ServiceCards from "./ServiceCards"
+import ServiceCards from "@/app/components/ui/ServiceCards"
 
 export default function Services() {
   return (
