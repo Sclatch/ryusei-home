@@ -23,8 +23,9 @@ const lubrifont = WDXL_Lubrifont_JP_N({
 })
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://ryusei.dedyn.io"),
   title: "Ryusei - Home",
-  description: "Welcome to Ryusei's personal homelab website! Explore projects and services provided for free.",
+  description: "Ryusei | Personal Homelab & Services. Discover free self-hosted projects and experiment with the tools I've built.",
 };
 
 export default function RootLayout({
