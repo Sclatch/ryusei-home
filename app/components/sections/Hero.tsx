@@ -2,6 +2,7 @@
 
 import { FaGithub, FaServer } from "react-icons/fa"
 import ScrollingTexts from "@/app/components/ui/ScrollingTexts"
+import Image from "next/image"
 
 export default function Hero() {
   return (
@@ -39,9 +40,14 @@ export default function Hero() {
         </span>
 
         {/* Heading */}
-        <h1 className="font-gloock sm:text-8xl text-6xl text-stone-900">
-          Ryusei
-        </h1>
+        <Image
+          src="/images/ryuseitext.png"
+          alt="Ryusei"
+          height={1000}
+          width={197}
+          sizes="100vw"
+          className="sm:w-[24em] w-[20em] h-auto -translate-x-12 mx-4"
+        />
 
         {/* Divider accent */}
         <div className="mt-5 mb-6 h-px w-12 bg-stone-400" />

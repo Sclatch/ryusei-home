@@ -18,11 +18,13 @@ const lubrifont = WDXL_Lubrifont_JP_N({
   variable: "--font-wdxl-lubrifont",
   subsets: ["latin"],
   weight: "400",
+  /* IDK man, it gives warning for some reason */
+  adjustFontFallback: false, 
 })
 
 export const metadata: Metadata = {
-  title: "Ryusei",
-  description: "Landing Page for Ryusei Homelab",
+  title: "Ryusei - Home",
+  description: "Welcome to Ryusei's personal homelab website! Explore projects and services provided for free.",
 };
 
 export default function RootLayout({

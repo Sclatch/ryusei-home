@@ -23,8 +23,8 @@ interface Service {
 const services: Service[] = [
   {
     id: "cinezumi",
-    icon: "/images/cinezumiicon.png",
-    logo: "/images/cinezumifull.png",
+    icon: "/images/logos/cinezumiicon.png",
+    logo: "/images/logos/cinezumifull.png",
     logoAlt: "Cinezumi",
     href: "https://ryusei.dedyn.io/cinema",
     buttonLabel: "Open Cinezumi",
@@ -37,8 +37,8 @@ const services: Service[] = [
   },
   {
     id: "ryuusei",
-    icon: "/images/ryuuseiicon.png",
-    logo: "/images/ryuuseilogo.png",
+    icon: "/images/logos/ryuuseiicon.png",
+    logo: "/images/logos/ryuuseilogo.png",
     logoAlt: "Ryuusei",
     href: "https://github.com/Sclatch/RYUUSEI-Pad",
     buttonLabel: "Get Ryuusei",

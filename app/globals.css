@@ -25,13 +25,13 @@
 }
 
 @keyframes scrollLeft {
-  0% { transform: translateX(12.5%); }
-  100% { transform: translateX(-12.5%); }
+  0% { transform: translateX(8.33%); }
+  100% { transform: translateX(-8.33%); }
 }
 
 @keyframes scrollRight {
-  0% { transform: translateX(-12.5%); }
-  100% { transform: translateX(12.5%); }
+  0% { transform: translateX(-8.33%); }
+  100% { transform: translateX(8.33%); }
 }
 
 body {
