@@ -73,27 +73,29 @@ function ServiceCard({ index = 0, icon, logo, logoAlt, href, buttonLabel, Button
     >
 
       {/* Background image */}
-      <Image
-        src={icon}
-        alt=""
-        height={0}
-        width={0}
-        sizes="100vw"
-        style={{ filter: stoneFilter }}
-        className="absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 top-0 -translate-y-1/4 right-1/2 translate-x-1/2 sm:translate-x-0 w-80 h-auto object-contain opacity-10 z-0 pointer-events-none select-none"
-      />
+      <div className="absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 top-0 -translate-y-1/4 right-1/2 translate-x-1/2 sm:translate-x-0 w-80 h-80 opacity-10 z-0 pointer-events-none select-none">
+        <Image
+          src={icon}
+          alt=""
+          fill
+          sizes="20vw"
+          style={{ filter: stoneFilter }}
+          className="object-contain"
+        />
+      </div>
 
       {/* Top row — logo + button */}
       <div className="flex sm:flex-row flex-col items-center justify-between">
-        <Image
-          src={logo}
-          alt={logoAlt}
-          height={0}
-          width={0}
-          sizes="100vw"
-          style={{ filter: stoneFilter }}
-          className="w-48 h-auto object-contain"
-        />
+        <div className="relative w-48 h-16 pointer-events-none select-none">
+          <Image
+            src={logo}
+            alt={logoAlt}
+            fill
+            sizes="20vw"
+            style={{ filter: stoneFilter }}
+            className="object-contain object-left"
+          />
+        </div>
         <a
           href={href}
           target="_blank"
