@@ -40,15 +40,14 @@ export default function Hero() {
         </span>
 
         {/* Heading */}
-        <div className="relative sm:w-[24em] w-[20em] h-16 sm:-translate-x-12 mx-4">
-          <Image
-            src="/images/ryuseitext.png"
-            alt="Ryusei"
-            fill
-            sizes="(min-width: 640px) 24em, 20em"
-            className="object-contain object-left"
-          />
-        </div>
+        <Image
+          src="/images/ryuseitext.png"
+          alt="Ryusei"
+          width={1000}
+          height={197}
+          sizes="100vw"
+          className="sm:w-[24em] w-[20em] h-auto -translate-x-12 mx-4"
+        />
 
         {/* Divider accent */}
         <div className="mt-5 mb-6 h-px w-12 bg-stone-400" />
