@@ -2,7 +2,7 @@
 
 import { useRef, useEffect, useState } from "react";
 import { MdMovie, MdDownload } from "react-icons/md"
-import { IconType } from "react-icons"
+import { IconType } from "react-icons/lib"
 
 import Image from "next/image"
 

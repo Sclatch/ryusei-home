@@ -47,7 +47,6 @@ export default function About() {
               style={{ filter: "invert(28%) sepia(8%) saturate(400%) hue-rotate(10deg) brightness(85%)" }}
               height={910}
               width={719}
-              sizes="100vw"
               className="w-[16em] h-auto drop-shadow-md"
             />
             <span className="text-xs uppercase tracking-widest text-stone-400">Nezumi — ネズミ</span>
