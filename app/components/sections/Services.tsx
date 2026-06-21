@@ -2,7 +2,7 @@ import ServiceCards from "@/app/components/ui/ServiceCards"
 
 export default function Services() {
   return (
-    <section id="services" className="relative overflow-hidden snap-start flex flex-col min-h-screen bg-stone-200">
+    <section id="services" className="relative overflow-hidden flex flex-col min-h-screen bg-stone-200">
 
       {/* Background plus pattern */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none"
