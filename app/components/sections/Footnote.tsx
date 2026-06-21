@@ -3,7 +3,7 @@ import { FaGithub } from "react-icons/fa";
 
 export default function Footnote() {
   return (
-    <section id="footnote" className="relative snap-end overflow-hidden flex flex-col justify-between bg-stone-900 sm:px-32 px-12 py-12">
+    <section id="footnote" className="relative overflow-hidden flex flex-col justify-between bg-stone-900 sm:px-32 px-12 py-12">
 
       {/* Main quote */}
       <div className="flex flex-col gap-3">

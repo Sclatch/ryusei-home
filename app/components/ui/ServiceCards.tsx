@@ -1,7 +1,7 @@
 "use client"
 
 import { useRef, useEffect, useState } from "react";
-import { MdMovie, MdDownload } from "react-icons/md"
+import { MdMovie, MdDownload, MdStorage } from "react-icons/md"
 import { IconType } from "react-icons/lib"
 
 import Image from "next/image"
@@ -32,6 +32,20 @@ const services: Service[] = [
     description: (
       <>
         A private movie and TV streaming platform using <b>Jellyfin</b>, deployed and managed entirely by me. Accessible from anywhere and shared with close friends and family, it delivers a seamless, ad-free experience with high-bitrate playback for my personal media collection.
+      </>
+    ),
+  },
+  {
+    id: "sendzumi",
+    icon: "/images/logos/cinezumiicon.png",
+    logo: "/images/logos/sendzumilogo.png",
+    logoAlt: "Sendzumi",
+    href: "https://send.ryusei.dedyn.io",
+    buttonLabel: "Open Sendzumi",
+    ButtonIcon: MdStorage,
+    description: (
+      <>
+        Private file storage — invite-only, fully under your control. Upload anything, then decide what stays private and what gets shared with a simple public link. Secure, simple, and built for total control over your files.
       </>
     ),
   },
