@@ -81,13 +81,13 @@ function ServiceCard({ index = 0, icon, logo, logoAlt, href, buttonLabel, Button
   return (
     <div
       ref={ref}
-      className={`relative overflow-hidden flex flex-col sm:gap-6 gap-4 rounded-2xl bg-stone-200 bg-opacity-50 border border-stone-400 p-8 transition-all duration-[1s] ease-out
+      className={`relative overflow-hidden flex flex-col md:gap-6 gap-4 rounded-2xl bg-stone-200 bg-opacity-50 border border-stone-400 p-8 transition-all duration-[1s] ease-out
         ${visible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-60"}`}
       style={{ transitionDelay: `${index * 0.3}s` }}
     >
 
       {/* Background image */}
-      <div className="absolute sm:right-0 sm:top-1/2 sm:-translate-y-1/2 top-0 -translate-y-1/4 right-1/2 translate-x-1/2 sm:translate-x-0 w-80 h-80 opacity-10 z-0 pointer-events-none select-none">
+      <div className="absolute md:right-0 md:top-1/2 md:-translate-y-1/2 top-0 -translate-y-1/4 right-1/2 translate-x-1/2 md:translate-x-0 w-80 h-80 opacity-10 z-0 pointer-events-none select-none">
         <Image
           src={icon}
           alt=""
@@ -99,7 +99,7 @@ function ServiceCard({ index = 0, icon, logo, logoAlt, href, buttonLabel, Button
       </div>
 
       {/* Top row — logo + button */}
-      <div className="flex sm:flex-row flex-col items-center justify-between">
+      <div className="flex md:flex-row flex-col items-center justify-between">
         <div className="relative w-48 h-16 pointer-events-none select-none">
           <Image
             src={logo}
@@ -114,7 +114,7 @@ function ServiceCard({ index = 0, icon, logo, logoAlt, href, buttonLabel, Button
           href={href}
           target="_blank"
           rel="noopener noreferrer"
-          className="flex items-center gap-2 rounded-full bg-stone-900 sm:mt-0 mt-4 px-6 py-2.5 text-stone-100 sm:text-base text-sm z-10 transition hover:bg-stone-700 active:scale-95"
+          className="flex items-center gap-2 rounded-full bg-stone-900 md:mt-0 mt-4 px-6 py-2.5 text-stone-100 md:text-base text-sm z-10 transition hover:bg-stone-700 active:scale-95"
         >
           <ButtonIcon className="text-lg" />
           {buttonLabel}
@@ -124,7 +124,7 @@ function ServiceCard({ index = 0, icon, logo, logoAlt, href, buttonLabel, Button
       <div className="h-px w-full bg-stone-300" />
 
       {/* Description */}
-      <p className="font-neuton sm:text-lg text-base text-stone-500 leading-relaxed max-w-xl">
+      <p className="font-neuton md:text-lg text-base text-stone-500 leading-relaxed max-w-xl">
         {description}
       </p>
 

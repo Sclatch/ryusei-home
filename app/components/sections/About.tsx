@@ -12,22 +12,22 @@ export default function About() {
     {
       label: "Behind the Name",
       content: (
-        <div className="flex flex-col sm:flex-row gap-12 w-full">
-          <div className="flex flex-col sm:w-1/2">
+        <div className="flex flex-col md:flex-row gap-12 w-full">
+          <div className="flex flex-col md:w-1/2">
             <p className="font-neuton text-lg text-stone-600 leading-relaxed">
               <em>Nezumi no Ryusei</em> translates to Ryusei of the Mouse. It combines two Japanese words: <strong>Nezumi</strong>「ネズミ」meaning "rat" or "mouse," and <strong>Ryusei</strong>「リュ星」. The "Ryu" is intentionally open to interpretation, carrying layered meanings that describe the nature of the "star"「星」.
             </p>
           </div>
-          <div className="flex flex-col gap-4 sm:w-1/2">
+          <div className="flex flex-col gap-4 md:w-1/2">
             <div className="rounded-2xl bg-stone-200 bg-opacity-60 pt-4 p-6 border border-stone-300">
               <span className="text-xs uppercase tracking-widest text-stone-400">ネズミ — Nezumi</span>
-              <p className="mt-2 font-neuton sm:text-lg  text-base text-stone-700 leading-relaxed">
+              <p className="mt-2 font-neuton md:text-lg  text-base text-stone-700 leading-relaxed">
                 The nickname for the mini PC running all my services (including this website) from beneath my bed. Hence the playful reference to a rat quietly operating beneath the bed.
               </p>
             </div>
             <div className="rounded-2xl bg-stone-200 bg-opacity-60 pt-4 p-6 border border-stone-300">
               <span className="text-xs uppercase tracking-widest text-stone-400">リュ星 — Ryusei</span>
-              <p className="mt-2 font-neuton sm:text-lg text-base text-stone-700 leading-relaxed">
+              <p className="mt-2 font-neuton md:text-lg text-base text-stone-700 leading-relaxed">
                 「流」Ryū (“flow”) — A symbol of the constant stream of data moving through my homelab, like a shooting star that leaves a luminous trail across the night sky.<br />
                 「龍」Ryū (“dragon”) — A nod to my favourite monster Valstrax from Monster Hunter, a dragon that blazes across the sky like a crimson shooting star.
               </p>
@@ -39,10 +39,10 @@ export default function About() {
     {
       label: "Hardware",
       content: (
-        <div className="flex flex-col sm:flex-row items-center gap-12 w-full">
+        <div className="flex flex-col md:flex-row items-center gap-12 w-full">
 
           {/* Image */}
-          <div className="flex flex-col items-center gap-4 sm:w-1/3">
+          <div className="flex flex-col items-center gap-4 md:w-1/3">
             <Image
               src="/images/minipc.png"
               alt="Mini PC Graphic"
@@ -55,7 +55,7 @@ export default function About() {
           </div>
 
           {/* Text */}
-          <div className="flex flex-col sm:w-2/3 gap-4">
+          <div className="flex flex-col md:w-2/3 gap-4">
             <h3 className="font-neuton text-3xl text-stone-900">
               Mouse Powerhouse
             </h3>
@@ -68,12 +68,12 @@ export default function About() {
                 { label: "Storage", value: "512GB NVMe + 1TB SATA", icon: BsHdd },
                 { label: "TDP", value: "6W (Idle) / 30W (Max)", icon: BsLightningCharge },
               ].map(({ label, value, icon: Icon }: { label: string; value: string; icon: IconType }) => (
-                <div key={label} className="flex sm:flex-row flex-col items-center gap-4 rounded-xl bg-stone-200 bg-opacity-60 border border-stone-300 px-4 py-3">
+                <div key={label} className="flex md:flex-row flex-col items-center gap-4 rounded-xl bg-stone-200 bg-opacity-60 border border-stone-300 px-4 py-3">
                   <div className="flex-shrink-0 p-2 rounded-lg bg-stone-300 bg-opacity-60">
                     <Icon className="text-xl text-stone-600" />
                   </div>
                   <div className="flex flex-col">
-                    <span className="text-xs uppercase sm:text-left text-center tracking-widest text-stone-400">{label}</span>
+                    <span className="text-xs uppercase md:text-left text-center tracking-widest text-stone-400">{label}</span>
                     <p className="font-neuton text-base text-stone-700 leading-tight">{value}</p>
                   </div>
                 </div>
@@ -91,8 +91,8 @@ export default function About() {
     {
       label: "Goal & Purpose",
       content: (
-        <div className="flex flex-col justify-end sm:flex-row gap-12 w-full">
-          <div className="flex flex-col sm:w-1/2">
+        <div className="flex flex-col justify-end md:flex-row gap-12 w-full">
+          <div className="flex flex-col md:w-1/2">
             <p className="font-neuton text-right text-lg text-stone-600 leading-relaxed">
               I built this homelab to learn, experiment, grow, and to help my friends along the way. It's a reliable, power efficient playground where I run real services, test new ideas, and share what I learn about self-hosting and server management.
             </p>
@@ -122,21 +122,21 @@ export default function About() {
       />
 
       {/* Header */}
-      <div className="relative z-10 flex flex-col sm:mt-24 mt-12 sm:px-32 px-12">
+      <div className="relative z-10 flex flex-col md:mt-24 mt-12 md:px-32 px-12">
         <span className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-stone-400">
           About
         </span>
-        <h2 className="font-gloock sm:text-6xl text-4xl text-stone-900 leading-none">
+        <h2 className="font-gloock md:text-6xl text-4xl text-stone-900 leading-none">
           Nezumi no Ryusei
         </h2>
-        <span className="font-lubrifont mt-2 tracking-[2em] text-sm text-stone-400">
+        <span className="font-lubrifont mt-2 tracking-[2em] text-md text-stone-400">
           ネズミのリュ星
         </span>
         <div className="mt-5 h-px w-12 bg-stone-400" />
       </div>
 
       {/* Carousel */}
-      <div className="relative z-10 flex sm:px-16 px-4 mt-10 flex-1">
+      <div className="relative z-10 flex md:px-16 px-4 mt-10 flex-1">
 
         {/* Left chevron */}
         <button
@@ -147,7 +147,7 @@ export default function About() {
         </button>
 
         {/* Slide */}
-        <div className="flex-1 sm:px-8 px-2">
+        <div className="flex-1 md:px-8 px-2">
           <div className="flex items-center justify-between mb-3">
             <span className="text-xs font-semibold uppercase tracking-[0.3em] text-stone-400">
               {slides[current].label}
