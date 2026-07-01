@@ -72,7 +72,7 @@ export default function About() {
                   <div className="flex-shrink-0 p-2 rounded-lg bg-stone-300 bg-opacity-60">
                     <Icon className="text-xl text-stone-600" />
                   </div>
-                  <div className="flex flex-col">
+                  <div className="flex flex-col md:-mt-0 -mt-2">
                     <span className="text-xs uppercase md:text-left text-center tracking-widest text-stone-400">{label}</span>
                     <p className="font-neuton text-base text-stone-700 leading-tight">{value}</p>
                   </div>

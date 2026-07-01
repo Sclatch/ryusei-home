@@ -32,7 +32,7 @@ export default function Hero() {
 
       <ScrollingTexts />
       
-      <div className="z-10 flex flex-col sm:pl-32 pl-12">
+      <div className="z-10 flex flex-col md:pl-32 pl-12">
   
         {/* Eyebrow label */}
         <span className="mb-6 text-xs font-semibold uppercase tracking-[0.3em] text-stone-400">
@@ -46,14 +46,14 @@ export default function Hero() {
           width={1000}
           height={197}
           sizes="100vw"
-          className="sm:w-[24em] w-[20em] h-auto -translate-x-12 mx-4"
+          className="md:w-[24em] w-[20em] h-auto -translate-x-12 mx-4"
         />
 
         {/* Divider accent */}
         <div className="mt-5 mb-6 h-px w-12 bg-stone-400" />
 
         {/* Subtitle */}
-        <p className="font-neuton sm:text-xl text-m text-stone-500">
+        <p className="font-neuton md:text-xl text-m text-stone-500">
           Self-hosted. Self-made. <b>Personal Homelab</b>.<br />
           Projects, services, and the occasional tinkering.
         </p>
