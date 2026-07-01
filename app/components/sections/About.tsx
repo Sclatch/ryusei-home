@@ -2,6 +2,8 @@
 import Image from "next/image"
 import { useState } from "react"
 import { FaChevronLeft, FaChevronRight } from "react-icons/fa"
+import { BsCpu , BsMemory, BsHdd, BsLightningCharge } from "react-icons/bs"
+import { IconType } from "react-icons/lib"
 
 export default function About() {
   const [current, setCurrent] = useState(0)
@@ -57,19 +59,23 @@ export default function About() {
             <h3 className="font-neuton text-3xl text-stone-900">
               Mouse Powerhouse
             </h3>
-            <div className="h-px w-12 bg-stone-400" />
 
             {/* Specs grid */}
             <div className="grid grid-cols-2 gap-3">
               {[
-                { label: "CPU", value: "Intel N100 12th Gen" },
-                { label: "RAM", value: "24GB (zram enabled)" },
-                { label: "Storage", value: "512GB NVMe + 1TB SATA" },
-                { label: "TDP", value: "6W (Idle) / 30W (Max)" },
-              ].map((spec) => (
-                <div key={spec.label} className="rounded-xl bg-stone-200 bg-opacity-60 border border-stone-300 px-4 py-3">
-                  <span className="text-xs uppercase tracking-widest text-stone-400">{spec.label}</span>
-                  <p className="mt-1 font-neuton text-base text-stone-700">{spec.value}</p>
+                { label: "CPU", value: "Intel N100 12th Gen", icon: BsCpu },
+                { label: "RAM", value: "24GB (zram enabled)", icon: BsMemory },
+                { label: "Storage", value: "512GB NVMe + 1TB SATA", icon: BsHdd },
+                { label: "TDP", value: "6W (Idle) / 30W (Max)", icon: BsLightningCharge },
+              ].map(({ label, value, icon: Icon }: { label: string; value: string; icon: IconType }) => (
+                <div key={label} className="flex sm:flex-row flex-col items-center gap-4 rounded-xl bg-stone-200 bg-opacity-60 border border-stone-300 px-4 py-3">
+                  <div className="flex-shrink-0 p-2 rounded-lg bg-stone-300 bg-opacity-60">
+                    <Icon className="text-xl text-stone-600" />
+                  </div>
+                  <div className="flex flex-col">
+                    <span className="text-xs uppercase sm:text-left text-center tracking-widest text-stone-400">{label}</span>
+                    <p className="font-neuton text-base text-stone-700 leading-tight">{value}</p>
+                  </div>
                 </div>
               ))}
             </div>
