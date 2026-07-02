@@ -32,7 +32,7 @@ const services: Service[] = [
     ButtonIcon: MdMovie,
     description: (
       <>
-        A private movie and TV streaming platform using <b>Jellyfin</b>, deployed and managed entirely by me. Accessible from anywhere and shared with close friends and family, it delivers a seamless, ad-free experience with high-bitrate playback for my personal media collection.
+        A private movie and TV streaming platform using <b>Jellyfin</b>. Accessible from anywhere and shared with close friends and family, it delivers a seamless, ad-free experience with high-bitrate playback for my personal media collection.
       </>
     ),
   },
