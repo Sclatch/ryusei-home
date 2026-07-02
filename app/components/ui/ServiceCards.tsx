@@ -1,7 +1,8 @@
 "use client"
 
 import { useRef, useEffect, useState } from "react";
-import { MdMovie, MdDownload, MdStorage } from "react-icons/md"
+import { MdMovie, MdDownload } from "react-icons/md"
+import { FaBoxOpen } from "react-icons/fa"
 import { IconType } from "react-icons/lib"
 
 import Image from "next/image"
@@ -37,12 +38,12 @@ const services: Service[] = [
   },
   {
     id: "sendzumi",
-    icon: "/images/logos/cinezumiicon.png",
+    icon: "/images/logos/sendzumiicon.png",
     logo: "/images/logos/sendzumilogo.png",
     logoAlt: "Sendzumi",
     href: "https://send.ryusei.dedyn.io",
     buttonLabel: "Open Sendzumi",
-    ButtonIcon: MdStorage,
+    ButtonIcon: FaBoxOpen,
     description: (
       <>
         Private file storage — invite-only, fully under your control. Upload anything, then decide what stays private and what gets shared with a simple public link. Secure, simple, and built for total control over your files.
