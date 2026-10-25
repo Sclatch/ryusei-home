@@ -12,6 +12,11 @@ FROM node:${NODE_VERSION} AS dependencies
 # Set working directory
 WORKDIR /app
 
+# Node binaries downloaded by pnpm need libatomic, which the slim image lacks
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends libatomic1 \
+ && rm -rf /var/lib/apt/lists/*
+
 # Copy package-related files first to leverage Docker's caching mechanism
 COPY package.json yarn.lock* package-lock.json* pnpm-lock.yaml* pnpm-workspace.yaml* .npmrc* ./
 
@@ -37,6 +42,11 @@ FROM node:${NODE_VERSION} AS builder
 
 # Set working directory
 WORKDIR /app
+
+# Update the package index and install libatomic1, which is required for Node binaries downloaded by pnpm
+RUN apt-get update \
+ && apt-get install -y --no-install-recommends libatomic1 \
+ && rm -rf /var/lib/apt/lists/*
 
 # Copy project dependencies from dependencies stage
 COPY --from=dependencies /app/node_modules ./node_modules
