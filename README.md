@@ -1,20 +1,18 @@
 # Ryusei Home - Personal Homelab Site
 
-
-
-<div style="text-align: center;">
-
-![Ryusei Logo](public/images/ryuseitext_colour.png)
-
-<a href="https://ryusei.dedyn.io" style="font-size: 1.5em"> ✨ Ryusei Website ✨</a>
-
+<p align="center">
+    <img src="public/images/ryuseitext_colour.png">
+</p>
+<p align="center">
+    <a href="https://ryusei.dedyn.io" style="font-size: 1.5em"> ✨ Ryusei Website ✨</a>
+</p>
+<p align="center">
 This is a basic simple static website using Next.JS and Tailwind CSS framework. This whole project is simple, lightweight, and small.
-
-</div>
+</p>
 
 ## About this project
 
-I personaly created this project to polish my web building skill while also utilizing LLM. I have a personal homelab that is partially open to the internet and most of the services are locked locally. Creating a landing page to my homelab and introducing the available services seems like a fun project to do. It will also help my friends who use my server for the services that I have provided.
+I personally created this project to polish my web building skill while also utilizing LLM. I have a personal homelab that is partially open to the internet and most of the services are locked locally. Creating a landing page to my homelab and introducing the available services seems like a fun project to do. It will also help my friends who use my server for the services that I have provided.
 
 While Code Agent LLM is used in this project, It is mostly about back-and-forth interaction between what the AI offered and me rejecting or approving the changes. It's kept to a minimal level while I am still in control and understand the code.
 
