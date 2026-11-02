@@ -127,3 +127,13 @@ Desktop.ini
 *.gemini*
 *.openai*
 *.anthropic*
+
+# Bunch of basic files
+node_modules
+.next
+.git
+.github
+Dockerfile*
+.dockerignore
+*.log
+.env*
